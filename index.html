@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Testnet Wallet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bitcoinjs-lib@5.2.0/bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Bitcoin Testnet Wallet</h1>
+        <div class="wallet-actions">
+            <button id="generateWallet" class="btn">Generate New Wallet</button>
+        </div>
+        <div id="walletInfo" class="info-box"></div>
+        <div id="balanceInfo" class="info-box"></div>
+        <div class="transaction-box">
+            <h3>Send Testnet Bitcoin</h3>
+            <input type="text" id="recipientAddress" placeholder="Recipient Address">
+            <input type="number" id="amount" placeholder="Amount">
+            <button id="sendBitcoin" class="btn">Send</button>
+        </div>
+        <div class="faucet-info">
+            <h3>Get Testnet Bitcoins</h3>
+            <p>Use a Bitcoin testnet faucet to get test coins.</p>
+            <a href="https://testnet-faucet.mempool.co/" target="_blank" class="btn">Visit Faucet</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
